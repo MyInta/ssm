@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <system systemId="http://www.springframework.org/schema/beans/spring-beans.xsd" uri="file:///F:/视频教学/JAVA教学/springMVC&amp;Mybatis/Spring框架2016版资料/资料/spring-framework-4.2.4.RELEASE/schema/beans/spring-beans-4.2.xsd"/>
+</catalog>

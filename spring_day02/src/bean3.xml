@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+        
+        <!-- AOP操作的约束 -->
+        <!-- 配置对象 被增强与增强对象创建 -->
+        <bean id="myTarget" class="cn.ssijri.aop.MyTarget"></bean>
+        <bean id="adviceTarget" class="cn.ssijri.aop.AdviceTarget"></bean>
+        <!-- aop配置操作 -->
+        <aop:config>
+        	<!-- 配置切入点  expression表达式方式指定对哪个目标去增强-->
+        	<aop:pointcut expression="execution(* cn.ssijri.aop.MyTarget.add(..))" id="pointcut1"/>
+        	
+        	<!-- 配置切面  ref指定的增强方法对象-->
+        	<aop:aspect ref="adviceTarget">
+        		<!-- 在内部配置增强类型 -->
+        		<aop:before method="beforeAdd" pointcut-ref="pointcut1"/>
+        		<aop:after method="afterAdd" pointcut-ref="pointcut1"/> 
+        		<aop:around method="around" pointcut-ref="pointcut1"/>
+        	</aop:aspect>
+        	
+        	
+        </aop:config>
+</beans>

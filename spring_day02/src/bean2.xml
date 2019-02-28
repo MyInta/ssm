@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" 
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+        
+        <!-- 配置文件形式创建对象 -->
+        <bean id="bookDao" class="cn.ssijri.xmlanno.BookDao"></bean>
+        <bean id="orderDao" class="cn.ssijri.xmlanno.OrderDao"></bean>
+        <bean id="bookService" class="cn.ssijri.xmlanno.BookService"></bean>
+        <!-- 注解形式注入对象属性 -->
+        <context:component-scan base-package="cn.ssijri"></context:component-scan>
+        
+</beans>

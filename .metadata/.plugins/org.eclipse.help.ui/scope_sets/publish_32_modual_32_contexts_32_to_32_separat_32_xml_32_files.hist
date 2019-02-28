@@ -1,0 +1,6 @@
+#Mon Aug 06 22:34:18 CST 2018
+expression=publish modual contexts to separat xml files
+org.eclipse.help.ui.localSearch.master=true
+org.eclipse.sdk.Google.master=true
+org.eclipse.sdk.Eclipse.master=true
+__DEFAULT__=false

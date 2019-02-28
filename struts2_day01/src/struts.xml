@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	
+	<!-- <package name="hellodemo" extends="struts-default" namespace="/">
+	名称：访问路径
+		<action name="hello" class="cn.ssijri.action.HelloAction">
+			配置方法的返回值到页面
+			<result name="ok">/hello.jsp</result>
+		</action>
+	</package> -->
+	
+	<!-- 引入hello.xml文件 -->
+	<!-- <include file="cn\ssijri\action\hello.xml"></include> -->
+	
+	<!-- 配置action的 -->
+	<!-- <package name="methoddemo" extends="struts-default" namespace="/">
+		<action name="addMethod" class="cn.ssijri.method.BookAction" method="add"></action>
+		<action name="updateMethod" class="cn.ssijri.method.BookAction" method="update"></action>
+	</package> -->
+	
+	<!-- 通配符方式配置 -->
+	<package name="methoddemo" extends="struts-default" namespace="/">
+		<action name="book_*" class="cn.ssijri.method.BookAction" method="{1}"></action>
+	</package>
+	
+</struts>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- bean约束，从spring的doc里找html再用游览器查阅到 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <!-- ioc入门 -->
+        <bean id="user" class="cn.ssijri.ioc.User"></bean>
+        <!-- 静态工厂的方式 -->
+        <bean id="bean2" class="cn.ssijri.bean.Bean2Factory" factory-method="getBean2"></bean>
+        
+        <!-- 实例工厂的方式 -->
+        <!-- 创建工厂对象 -->
+        <bean id="bean3Factory" class="cn.ssijri.bean.Bean3Factory"></bean>
+        <bean id="bean3" factory-bean="bean3Factory" factory-method="getBean3"></bean>
+        
+        <!-- 使用有参构造注入属性 -->
+        <bean id="demo1" class="cn.ssijri.property.PropertyDemo1">
+        	<constructor-arg name="userName" value="Inta"></constructor-arg>
+        </bean>
+        
+        <!-- set注入方式 -->
+        <bean id="propertyDemo2" class="cn.ssijri.property.PropertyDemo2">
+        	<property name="userName" value="Intadd"></property>
+        </bean>
+        
+        <!-- set方式注入【对象】 -->
+        <bean id="userDao" class="cn.ssijri.property.UserDao"></bean>
+        <bean id="userService" class="cn.ssijri.property.UserService">
+        	<property name="userDao" ref="userDao"></property>
+        </bean>
+        
+        <!-- p名称注入 -->
+<!--         <bean id="person" class="cn.ssijri.property.Person" p:pname="p名称空间注入"></bean> -->
+        
+        <!-- 复杂对象 arr list map properties这些属性的注入  
+        	list map的value标签内容不用加“” 且两者写法一样 用list标签
+        	map用map 标签 元素用entry标签 内部k v注入值
+        	properties的属性key在prop内，而value写在外面
+        	-->
+        <bean id="person" class="cn.ssijri.property.Person">
+        	<!-- String字符串类型 -->
+        	<property name="pname" value="pname String类型"></property>
+        	<!-- arrs数组类型 -->
+        	<property name="arrs">
+        		<list>
+        			<value>小马</value>
+        			<value>小王</value>
+        			<value>小强</value>
+        		</list>
+        	</property>
+        	<!-- list类型 list和数组基本一致-->
+        	<property name="list">
+        		<list>
+        			<value>list01</value>
+        			<value>list02</value>
+        			<value>list03</value>
+        		</list>
+        	</property>
+        	<!-- map类型 -->
+        	<property name="map">
+        		<map>
+        			<entry key="aaa" value="aaa01"></entry>
+        			<entry key="bbb" value="bbb01"></entry>
+        			<entry key="ccc" value="ccc01"></entry>
+        		</map>
+        	</property>
+        	<!-- properties类型 -->
+        	<property name="properties">
+        		<props>
+        			<prop key="driverclass">com.mysql.jdbc.Driver</prop>
+        			<prop key="uername">root</prop>
+        		</props>
+        	</property>
+        </bean>
+        
+</beans>

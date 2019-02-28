@@ -1,0 +1,15 @@
+package cn.ssijri.mybatis.mapper;
+
+import java.util.List;
+
+import cn.ssijri.mybatis.po.Orders;
+import cn.ssijri.mybatis.po.OrdersCustom;
+
+public interface OrderCustomMapper {
+    //根据用户名列查询用户列表
+    public List<OrdersCustom> findOrdersUser() throws Exception;
+    
+    public List<Orders> findOrdersUserResultMap() throws Exception;
+    
+    public List<Orders> findOrdersAndOrderDetailResultMap() throws Exception;
+}

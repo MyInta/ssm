@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+    <libraryInfo home="F:\JAVA\inta1.8\jdk" version="1.8.0_181">
+        <bootpath>
+            <entry path="F:\JAVA\inta1.8\jre\lib\resources.jar"/>
+            <entry path="F:\JAVA\inta1.8\jre\lib\rt.jar"/>
+            <entry path="F:\JAVA\inta1.8\jre\lib\sunrsasign.jar"/>
+            <entry path="F:\JAVA\inta1.8\jre\lib\jsse.jar"/>
+            <entry path="F:\JAVA\inta1.8\jre\lib\jce.jar"/>
+            <entry path="F:\JAVA\inta1.8\jre\lib\charsets.jar"/>
+            <entry path="F:\JAVA\inta1.8\jre\lib\jfr.jar"/>
+            <entry path="F:\JAVA\inta1.8\jre\classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="F:\JAVA\inta1.8\jre\lib\ext"/>
+            <entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="F:\JAVA\inta1.8\jre\lib\endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="E:\JAVA\inta1.11" version="11.0.2"/>
+    <libraryInfo home="E:\JAVA\inta\jre" version="9.0.1"/>
+    <libraryInfo home="F:\JAVA\inta1.8\jre" version="1.8.0_181">
+        <bootpath>
+            <entry path="F:\JAVA\inta1.8\jre\lib\resources.jar"/>
+            <entry path="F:\JAVA\inta1.8\jre\lib\rt.jar"/>
+            <entry path="F:\JAVA\inta1.8\jre\lib\sunrsasign.jar"/>
+            <entry path="F:\JAVA\inta1.8\jre\lib\jsse.jar"/>
+            <entry path="F:\JAVA\inta1.8\jre\lib\jce.jar"/>
+            <entry path="F:\JAVA\inta1.8\jre\lib\charsets.jar"/>
+            <entry path="F:\JAVA\inta1.8\jre\lib\jfr.jar"/>
+            <entry path="F:\JAVA\inta1.8\jre\classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="F:\JAVA\inta1.8\jre\lib\ext"/>
+            <entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="F:\JAVA\inta1.8\jre\lib\endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="F:\JAVA\inta\jdk" version="9.0.1"/>
+</libraryInfos>

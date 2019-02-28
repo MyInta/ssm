@@ -1,0 +1,14 @@
+package cn.ssijri.mybatis.mapper;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class OrderCustomMapperTest {
+
+	@Test
+	public void testFindOrdersUser() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	
+	<package name="demo01" extends="struts-default" namespace="/">
+		<action name="UserAction" class="cn.ssijri.action.UserAction"></action>
+		<action name="ValueStackDemo01" class="cn.ssijri.action.ValueStackDemo01">
+			<result name="success">/valueStack.jsp</result>
+		</action>
+		<action name="ObjectDemoAction" class="cn.ssijri.action.ObjectDemoAction">
+			<result name="success">/valueStack.jsp</result>
+		</action>
+		<action name="ListDemoAction" class="cn.ssijri.action.ListDemoAction">
+			<result name="success">/valueStack.jsp</result>
+		</action>
+	</package>
+</struts>
