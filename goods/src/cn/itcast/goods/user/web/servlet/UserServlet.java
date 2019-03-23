@@ -117,7 +117,7 @@ public class UserServlet extends BaseServlet {
 		 */
 		Map<String,String> errors = validateRegist(formUser,req.getSession());
 		//如果errors map中有内容，说明有错
-		if(errors.size()>0) {
+		if (/* errors!=null&& */errors.size()>0) {
 			req.setAttribute("form", formUser);
 			req.setAttribute("errors", errors);
 			return "/jsps/user/regist.jsp";

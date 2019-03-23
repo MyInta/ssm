@@ -40,5 +40,7 @@
             <entry path="F:\JAVA\inta1.8\jre\lib\endorsed"/>
         </endorsedDirs>
     </libraryInfo>
+    <libraryInfo home="E:\JAVA\inta\jdk\jre" version="9.0.1"/>
     <libraryInfo home="F:\JAVA\inta\jdk" version="9.0.1"/>
+    <libraryInfo home="E:\JAVA\inta\jdk" version="9.0.1"/>
 </libraryInfos>

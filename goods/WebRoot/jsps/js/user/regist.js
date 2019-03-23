@@ -174,7 +174,7 @@ function varidateLoginpass(){
  * @returns
  */
 function varidateReloginPass(){
-	var id = "reloginPass";
+	var id = "reloginpass";
 	var value = $("#"+id).val();//获取输入框内的值
 	//1、非空
 	if(!value){

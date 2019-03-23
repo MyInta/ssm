@@ -1,3 +1,0 @@
-#Tomcat publish data
-#Tue Feb 19 17:10:09 CST 2019
-org.eclipse.jst.jee.server\:/binary\:E\:\\JAVA\\EclipseEE\\inta\\springmvc_mybatis\\WebContent\\WEB-INF\\lib\\spring-web-4.2.4.RELEASE.jar=WEB-INF/lib/spring-web-4.2.4.RELEASE.jar

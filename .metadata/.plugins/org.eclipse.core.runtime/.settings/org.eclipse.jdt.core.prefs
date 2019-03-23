@@ -1,6 +1,8 @@
+JRE_LIB=E\:/JAVA/inta1.11/lib/jrt-fs.jar
+JRE_SRC=E\:/JAVA/inta1.11/lib/src.zip
 eclipse.preferences.version=1
 org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=E\:/Eclipse/eclipse/
-org.eclipse.jdt.core.classpathVariable.JRE_LIB=E\:/JAVA/inta/jre/lib/jrt-fs.jar
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=E\:/JAVA/inta/jdk/jre/lib/jrt-fs.jar
 org.eclipse.jdt.core.classpathVariable.JRE_SRC=
 org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
 org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=E\:/Eclipse/eclipse/plugins/org.junit_4.12.0.v201504281640/

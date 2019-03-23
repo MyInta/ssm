@@ -25,6 +25,7 @@
 		$(function(){
 			//获取cookie中的值
 			var loginname = window.decodeURI("${cookie.loginname.value}");
+			//如果有回显的信息，优先显示为回显的内容
 			if("${requestScope.user.loginname}"){
 				loginname = "${requestScope.user.loginname}";
 			}
