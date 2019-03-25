@@ -1,9 +1,9 @@
 package cn.itcast.goods.pager;
 
 public class Expression {
-	private String name;
-	private String operator;
-	private String value;
+	private String name;//Ãû³Æ
+	private String operator;//ÔËËã·û
+	private String value;//Öµ
 	public String getName() {
 		return name;
 	}

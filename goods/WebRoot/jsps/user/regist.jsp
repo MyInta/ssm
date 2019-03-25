@@ -37,7 +37,7 @@
 			</tr>
 			<tr>
 				<td class="tdText">确认密码：</td>
-				<td><input type="password" name="reloginPass" id="reloginPass" class="inputClass" value="${form.reloginPass}"/></td>
+				<td><input type="password" name="reloginpass" id="reloginpass" class="inputClass" value="${form.reloginpass}"/></td>
 				<td><label class="labelError" id="reloginPassError">${errors.reloginpass }</label></td>
 			</tr>
 			<tr>

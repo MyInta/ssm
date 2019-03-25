@@ -354,7 +354,7 @@ public class OrderServlet extends BaseServlet {
 		 */
 		User user = (User) req.getSession().getAttribute("sessionUser");
 		/**
-		 * 4、使用pc和cid调用service的findByCategory方法获得PageBean
+		 * 4、使用pc和cid调用service的myOrders方法获得PageBean
 		 */
 		PageBean<Order> pb = orderService.myOrders(user.getUid(), pc);
 		/**

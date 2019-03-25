@@ -179,11 +179,11 @@ public class BookDao {
 		for(Expression expr:exprList) {
 			//添加条件以and开头，条件的名称、运算符（其中运算符如果为is null则无值）
 			whereSql.append(" and ").append(expr.getName()).append(" ")
-			.append(expr.getOperator()).append(" ");
+			.append(expr.getOperator());
 			// where 1=1 and bid = 
 			if(!expr.getOperator().equals("is null")) {//如果值非空
-				//运算符为is null追加问好，params添加对应值
-				whereSql.append("?");
+				//运算符不为is null追加问号，params添加对应值
+				whereSql.append(" ").append("?");
 				params.add(expr.getValue());
 			}
 		}

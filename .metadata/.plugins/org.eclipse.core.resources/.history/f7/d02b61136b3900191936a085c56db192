@@ -1,5 +1,0 @@
-package cn.ssijri.mybatis.mapper;
-
-public class OrderCustomMapper {
-
-}

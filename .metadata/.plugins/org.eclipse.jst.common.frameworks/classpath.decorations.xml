@@ -1,7 +1,7 @@
 <classpath>
-  <container id="springmvc_day01!org.eclipse.jst.j2ee.internal.web.container">
-    <entry id="F:/JAVA/EclipseEE/inta/springmvc_day01/WebContent/WEB-INF/lib/spring-webmvc-4.2.4.RELEASE.jar">
-      <source-attachment-path>F:/视频教学/JAVA教学/springMVC&Mybatis/spingmvc&mybatis资料source/spring-framework-4.2.4.RELEASE/libs/spring-webmvc-4.2.4.RELEASE-sources.jar</source-attachment-path>
+  <container id="goods!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="E:/JAVA/EclipseEE/inta/goods/WebRoot/WEB-INF/lib/itcast-tools-1.4.jar">
+      <attribute name="source_encoding">UTF-8</attribute>
     </entry>
   </container>
 </classpath>
